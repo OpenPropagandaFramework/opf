@@ -14,9 +14,9 @@ We are taking precautions to conceal our identities - mostly because we do not w
 
 There exists a concept known as [Indicators of Compromise](https://en.wikipedia.org/wiki/Indicator_of_compromise) in the Cyber Security world that we hoped to port over to large-scale analysis of social media. We have three IoC models today based on atomic URLs, domains, and hashtags. Creating a pull request to add additional IoCs is strongly encouraged. We believe the next step forward will be adding a new IoC model based on images, as most of these propaganda accounts share memes/images more often than links or hashtags. 
 
-* [Current Domain IoC List]()
-* [Current URL IoC List]()
-* [Current Hashtag IoC List]()
+* [Current Domain IoC List](https://github.com/OpenPropagandaFramework/opf/blob/master/data/ioc_domains.csv)
+* [Current URL IoC List](https://github.com/OpenPropagandaFramework/opf/blob/master/data/ioc_urls.csv)
+* [Current Hashtag IoC List](https://github.com/OpenPropagandaFramework/opf/blob/master/data/ioc_hashtags.csv)
 
 
 We can use these IoCs to then look at accounts for known propaganda activities. For example, we can assume that if an account is sharing thousands of rt.com (Russia Today) articles, then there is a high likelihood they are working in the interests of Russian Media. We can also identify potential victims of propaganda using this model - as they will be sharing a wide variety of known propaganda at slow inconsistent rates. 
@@ -32,11 +32,12 @@ We welcome researchers to submit pull requests with analysis of the data in mark
 **General Resources**
 
 * [Indicator of Compromise Experimental Review]()
-* [Running List of Publications on Social Media Influence]()
+* [Running List of Publications on Social Media Influence](https://github.com/OpenPropagandaFramework/opf/blob/master/indicator_analysis.md)
 
 **Project Specific Analysis**
 
-* []()
+* [The Small Bot Army Propping Up Trump's Social Influence]()
+* [QAnon and The Radicalization of Social Media Using Conspiracy Theories]()
 
 # Raw Data
 
@@ -51,7 +52,7 @@ All data is found in the /data/ directory of this repository. CSV and JSON forma
 * 410,000 Victims of Propaganda Identified (200 > prop_score > 1)
 * 531,000 Accounts exposed to propaganda, but are not sharing it (prop_score = 0) 
 
-![Summary Stats]()
+![Summary Stats](https://github.com/OpenPropagandaFramework/opf/blob/master/img/summarystats.jpg)
 
 **Data Files Breakdown**
 
